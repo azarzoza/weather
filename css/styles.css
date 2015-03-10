@@ -28,7 +28,8 @@ body {
 }
 
 .weather li {
- 
+  padding: 5px;
+  margin: 5px;
   display: inline-block;
   font-family: 'Martel Sans', sans-serif;
   
@@ -42,5 +43,7 @@ body {
  
   margin-top: 45px;
 }
+
+
 
 

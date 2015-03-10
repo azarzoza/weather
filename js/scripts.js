@@ -13,6 +13,7 @@ var anchorage = '99504';
       html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
       html += '<li class="currently">'+weather.currently+'</li>';
       html += '<li class="sunrise">'+weather.sunrise+'</li>';
+      html += '<li class="sunset">'+weather.sunset+'</li>';
   
   if(weather.temp > 75) {
         $('body').animate({backgroundColor: '#F7AC57'}, 1500);
@@ -38,6 +39,7 @@ var anchorage = '99504';
       html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
       html += '<li class="currently">'+weather.currently+'</li>';
       html += '<li class="sunrise">'+weather.sunrise+'</li>';
+      html += '<li class="sunset">'+weather.sunset+'</li>';
   
       $("#weather2").html(html);
     },
@@ -56,6 +58,7 @@ var anchorage = '99504';
       html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
       html += '<li class="currently">'+weather.currently+'</li>';
       html += '<li class="sunrise">'+weather.sunrise+'</li>';
+      html += '<li class="sunset">'+weather.sunset+'</li>';
   
       $("#weather3").html(html);
     },
@@ -65,5 +68,4 @@ var anchorage = '99504';
   });
   
 });
-
 
