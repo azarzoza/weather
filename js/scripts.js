@@ -1,12 +1,5 @@
-$(document).ready(function() {
-    $('#fullpage').fullpage();
-});
 
-
-var cheney = '99004';
-var spokane = '99220';
-var anchorage = '99504';
-
+// Get my City Choices
  $(document).ready(function() {
   $.simpleWeather({
     zipcode: '99504',
@@ -100,4 +93,89 @@ var anchorage = '99504';
   });
   
 });
+// End of my cities with simpleWeather
+
+
+
+// Enter Zip get weather Button 
+// REF: http://foundation.zurb.com/docs/
+// REF: http://simpleweatherjs.com/
+
+// On click button, get zip, then run Simple Weather
+$('button').on('click', function() {
+  
+  // 1. Get & store entered zipcode
+  var zipcode = $('#getWeather').val();
+  
+  // 2. Pass weather into _simpleWeather()_ object
+  $.simpleWeather({
+    
+    location: zipcode,
+  
+    success: function(weather) {
+      
+      // Get & store temperature
+      var temp = weather.temp;
+      // Get & store city
+      var city = weather.city;
+
+      var currently = weather.currently;
+      
+      // Output to hooks in HTML
+      $('.temp').text(temp);
+      $('.city').text(city);
+      $('.currently').text(currently);
+
+      // See console for all properties of object
+      console.log(weather);
+    },
+  
+    error: function(error) {
+      $('body').html('<p>' + error + '</p>');
+    }
+  
+  });
+  
+  // 3. Reset input value
+  $('#getWeather').val('');
+  
+});
+
+
+
+
+// Conditioning
+
+
+ // 2. _simpleWeather()_ object
+  $.simpleWeather({
+    
+    location: '99504', // change zip
+    unit: 'f',
+    
+    // Get _weather_ object
+    success: function(weather) {
+     
+      console.log(weather.code);
+     if (weather.code >= 24 && weather.code <= 30) {
+       $('body').addClass('cloudy');
+     }
+      
+           if (weather.code >= 31 && weather.code <= 34) {
+       $('body').addClass('fair');
+     }
+      
+      // See console for _weather_ object
+      console.log(weather);
+    },
+  
+    // if error
+    error: function(error) {  
+      $('body').html('<p>' + error + '</p>');
+    }
+  
+  });
+
+
+
 

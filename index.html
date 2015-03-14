@@ -18,23 +18,38 @@
 </head>
 
 <body>
-  <div id="fullpage">
+  <!-- Enter Zip Code for Your Weather -->
+    <input type="text" id="getWeather"/>
+    <button>Forecast Your Weather</button>
+
+<!-- Output Weather --> 
+<ul class="button">
+  <li class="temp"> </li>
+  <li class="city"> </li>
+   <li class="currently"> </li>
+</ul>
+<!-- End of button to get weather -->
+
+
+<!-- My Own City weathers -->
+
 <div id="weather" class="weather section"></div> 
 
 
-
+<aside>
 <div id="weather2" class="weather section"></div>
 
 
 
 <div id="weather3" class="weather section"></div>
-</div>
+</aside>
+<!-- End of mine -->
   
   
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="js/semantic.min.js"></script>
   <script src="js/weather.js"></script>
-  <script src="js/fullPage.js"></script>
+
   <script src="js/scripts.js"></script>
 
 </body>

@@ -10,9 +10,17 @@
 }
 
 body {
-  padding: 25px;
-  margin: 25px;
+  padding: 5px;
+  margin: 5px;
   background: #fff;
+}
+
+
+aside {
+  padding: 10px;
+  margin: 50px;
+  border-bottom: solid;
+  border-top: solid;
 }
 
 .weather {
@@ -42,7 +50,7 @@ h3 {
 }
 
 .weather ul {
-   padding: 5px;
+  padding: 5px;
   margin: 5px;
   display: inline-block;
   font-family: 'Martel Sans', sans-serif;
@@ -64,7 +72,32 @@ h3 {
  
   margin-top: 45px;
 }
+/*Button Syling*/
+
+.button li {
+  list-style: none;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1em;
+  color: #4FB7C4;
+  text-align: left;
+}
+
+button {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: .75em;
+  color: #4FB7C4;
+}
 
 
 
 
+/*Weather Conditions*/
+
+
+.fair {
+  background: yellow;
+}
+
+.cloudy {
+  background: gray;
+}
