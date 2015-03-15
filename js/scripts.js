@@ -20,7 +20,9 @@
       html += '<li class="sunrise">'+weather.sunrise+'</li>';
       html += '<li class="sunset">'+weather.sunset+'</li>';
 
-   
+     for(var i=0;i<weather.forecast.length;i++) {
+        html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
+      }
     
 
     
@@ -174,6 +176,10 @@ var code = weather.code;
       
            if (weather.code >= 31 && weather.code <= 34) {
        $('body').addClass('fair');
+     }
+
+           if (weather.code >= 13 && weather.code <= 16) {
+       $('body').addClass('flurry');
      }
       
       // See console for _weather_ object

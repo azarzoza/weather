@@ -42,7 +42,7 @@ aside {
 .weather h2 {
   margin: 10px;
   padding: 10px;
-  color: #4FB7C4;
+  color: #181C20;
   font-size: 3em;
   text-align: center;
   font-family: 'Philosopher', sans-serif;
@@ -51,7 +51,7 @@ aside {
 
 h3 {
   font-size: 1em;
-  color: #4FB7C4;
+  color: #181C20;
   text-align: center;
   margin: 5px;
   font-family: 'Martel Sans', sans-serif;
@@ -72,6 +72,11 @@ h3 {
   
 }
 
+p {
+
+  display: block;
+}
+
 .weather .currently {
   margin: 0 20px;
 }
@@ -88,12 +93,21 @@ h3 {
   font-size: 1em;
   color: #4FB7C4;
   text-align: left;
+  border-radius: 5px;
+  background: #fff;
 }
 
 button {
   font-family: 'Martel Sans', sans-serif;
   font-size: .75em;
   color: #4FB7C4;
+}
+
+h4 {
+    font-family: 'Martel Sans', sans-serif;
+  font-size: .75em;
+  color: #47DAFF;
+  text-align: center;
 }
 
 #getWeather {
@@ -113,12 +127,18 @@ button {
 }
 
 .cloudy {
-  background: #C2D9EB
+  background: #C2D9EB;
 }
 
 .sunny {
-  background: #ECEA8E
+  background: #ECEA8E;
   font-family: 'Philosopher', sans-serif;
  
 }
 
+.flurry {
+  background: #A4B7BC;
+  font-family: 'Martel Sans', sans-serif;
+  color: #1E2729;
+ 
+}
