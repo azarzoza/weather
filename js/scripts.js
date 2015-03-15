@@ -1,4 +1,7 @@
 
+
+
+
 // Get my City Choices
  $(document).ready(function() {
   $.simpleWeather({
@@ -137,7 +140,7 @@ var code = weather.code;
       $('.currently').text(currently);
       $('.sunrise').text(sunrise).prepend('Sunrise ');
       $('.sunset').text(sunset).prepend('Sunset ');
-      $('.code').text(code).prepend('#data-icon ');
+   
      
       // See console for all properties of object
       console.log(weather);
