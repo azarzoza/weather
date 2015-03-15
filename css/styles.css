@@ -9,18 +9,26 @@
     font-style: normal;
 }
 
+
+.icon:before {
+  font-family: 'MeteoconsRegular';
+  content: attr(data-icon);
+}
+
+
 body {
-  padding: 5px;
+  padding: 25px 50px;
   margin: 5px;
   background: #fff;
 }
 
 
 aside {
-  padding: 10px;
+  padding: 40px 20px;
   margin: 50px;
-  border-bottom: solid;
-  border-top: solid;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+
 }
 
 .weather {
@@ -88,16 +96,29 @@ button {
   color: #4FB7C4;
 }
 
+#getWeather {
+   font-family: 'Martel Sans', sans-serif;
+  font-size: .75em;
+  color: #4FB7C4;
 
+}
 
-
-/*Weather Conditions*/
-
+.forecast {
+  padding: 25px;
+  margin: 25px;
+}
 
 .fair {
-  background: yellow;
+  background: #AFE4D6;
 }
 
 .cloudy {
-  background: gray;
+  background: #C2D9EB
 }
+
+.sunny {
+  background: #ECEA8E
+  font-family: 'Philosopher', sans-serif;
+ 
+}
+
