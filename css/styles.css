@@ -20,6 +20,8 @@ body {
   padding: 25px 50px;
   margin: 5px;
   background: #fff;
+  text-align: center;
+  color: #1C3A54;
 }
 
 
@@ -85,7 +87,7 @@ p {
 
 #weather2 {
  
-  margin-top: 45px;
+  margin-top: 30px;
 }
 /*Button Syling*/
 
@@ -102,12 +104,13 @@ button {
   font-family: 'Martel Sans', sans-serif;
   font-size: .75em;
   color: #4FB7C4;
+  text-align: center;
 }
 
 h4 {
   font-family: 'Martel Sans', sans-serif;
   font-size: .75em;
-  color: #47DAFF;
+  color: #1C3A54;
   text-align: center;
 }
 

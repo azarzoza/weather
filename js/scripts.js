@@ -49,10 +49,10 @@
       html += '<li class="sunrise">'+weather.sunrise+'</li>';
       html += '<li class="sunset">'+weather.sunset+'</li>';
   
-      $("#weather3").html(html);
+      $("#weather2").html(html);
     },
     error: function(error) {
-      $("#weather3").html('<p>'+error+'</p>');
+      $("#weather2").html('<p>'+error+'</p>');
     }
   });
   
@@ -76,10 +76,10 @@ $.simpleWeather({
    
 
 
-      $("#weather2").html(html);
+      $("#weather3").html(html);
     },
     error: function(error) {
-      $("#weather2").html('<p>'+error+'</p>');
+      $("#weather3").html('<p>'+error+'</p>');
     }
   });
   
