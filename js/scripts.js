@@ -96,10 +96,10 @@ $.simpleWeather({
       html += '<li class="sunrise">'+weather.sunrise+'</li>';
       html += '<li class="sunset">'+weather.sunset+'</li>';
   
-      $("#weather3").html(html);
+      $("#weather2").html(html);
     },
     error: function(error) {
-      $("#weather3").html('<p>'+error+'</p>');
+      $("#weather2").html('<p>'+error+'</p>');
     }
   });
 // End of my cities with simpleWeather
@@ -174,15 +174,15 @@ var code = weather.code;
      
       console.log(weather.code);
      if (weather.code >= 24 && weather.code <= 30) {
-       $('body').addClass('cloudy');
+       $('#weather').addClass('cloudy');
      }
       
            if (weather.code >= 31 && weather.code <= 34) {
-       $('body').addClass('fair');
+       $('#weather').addClass('fair');
      }
 
            if (weather.code >= 13 && weather.code <= 16) {
-       $('body').addClass('flurry');
+       $('#weather').addClass('flurry');
      }
       
       // See console for _weather_ object
@@ -191,9 +191,83 @@ var code = weather.code;
   
     // if error
     error: function(error) {  
-      $('body').html('<p>' + error + '</p>');
+      $('#weather').html('<p>' + error + '</p>');
     }
   
   });
+
+  // Conditioning
+
+
+ // 2. _simpleWeather()_ object
+  $.simpleWeather({
+    
+    location: '99504', // change zip
+    unit: 'f',
+    
+    // Get _weather_ object
+    success: function(weather) {
+     
+      console.log(weather.code);
+     if (weather.code >= 24 && weather.code <= 30) {
+       $('#weather2').addClass('cloudy');
+     }
+      
+           if (weather.code >= 31 && weather.code <= 34) {
+       $('#weather2').addClass('fair');
+     }
+
+           if (weather.code >= 13 && weather.code <= 16) {
+       $('#weather2').addClass('flurry');
+     }
+      
+      // See console for _weather_ object
+      console.log(weather);
+    },
+  
+    // if error
+    error: function(error) {  
+      $('#weather2').html('<p>' + error + '</p>');
+    }
+  
+  });
+
+  // Conditioning
+
+
+ // 2. _simpleWeather()_ object
+  $.simpleWeather({
+    
+    location: '99504', // change zip
+    unit: 'f',
+    
+    // Get _weather_ object
+    success: function(weather) {
+     
+      console.log(weather.code);
+     if (weather.code >= 24 && weather.code <= 30) {
+       $('#weather3').addClass('cloudy');
+     }
+      
+           if (weather.code >= 31 && weather.code <= 34) {
+       $('#weather3').addClass('fair');
+     }
+
+           if (weather.code >= 13 && weather.code <= 16) {
+       $('#weather3').addClass('flurry');
+     }
+      
+      // See console for _weather_ object
+      console.log(weather);
+    },
+  
+    // if error
+    error: function(error) {  
+      $('#weather').html('<p>' + error + '</p>');
+    }
+  
+  });
+
+  
 
   
