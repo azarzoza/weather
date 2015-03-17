@@ -184,6 +184,10 @@ var code = weather.code;
            if (weather.code >= 13 && weather.code <= 16) {
        $('#weather').addClass('flurry');
      }
+
+     if (weather.code >= 4 && weather.code <= 12) {
+       $('#weather').addClass('rain');
+     }
       
       // See console for _weather_ object
       console.log(weather);
@@ -219,6 +223,10 @@ var code = weather.code;
 
            if (weather.code >= 13 && weather.code <= 16) {
        $('#weather2').addClass('flurry');
+     }
+
+       if (weather.code >= 4 && weather.code <= 12) {
+       $('#weather').addClass('rain');
      }
       
       // See console for _weather_ object
@@ -256,6 +264,10 @@ var code = weather.code;
            if (weather.code >= 13 && weather.code <= 16) {
        $('#weather3').addClass('flurry');
      }
+
+       if (weather.code >= 4 && weather.code <= 12) {
+       $('#weather3').addClass('rain');
+     }
       
       // See console for _weather_ object
       console.log(weather);
@@ -263,7 +275,7 @@ var code = weather.code;
   
     // if error
     error: function(error) {  
-      $('#weather').html('<p>' + error + '</p>');
+      $('#weather3').html('<p>' + error + '</p>');
     }
   
   });
